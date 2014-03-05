@@ -89,15 +89,15 @@ Avoid extraneous whitespace in the following situations:
 - Immediately inside parentheses, brackets or braces
 
     ```coffeescript
-       $("body") # Yes
-       $( "body" ) # No
+    $("body") # Yes
+    $( "body" ) # No
     ```
 
 - Immediately before a comma
 
     ```coffeescript
-       console.log x, y # Yes
-       console.log x , y # No
+    console.log x, y # Yes
+    console.log x , y # No
     ```
 
 Additional recommendations:
@@ -120,15 +120,15 @@ Additional recommendations:
     - _(Do not use more than one space around these operators)_
 
         ```coffeescript
-           # Yes
-           x = 1
-           y = 1
-           fooBar = 3
+        # Yes
+        x = 1
+        y = 1
+        fooBar = 3
 
-           # No
-           x      = 1
-           y      = 1
-           fooBar = 3
+        # No
+        x      = 1
+        y      = 1
+        fooBar = 3
         ```
 
 <a name="comments"/>
@@ -150,16 +150,16 @@ Each line of a block comment starts with a `#` and a single space, and should be
 Paragraphs inside of block comments are separated by a line containing a single `#`.
 
 ```coffeescript
-  # This is a block comment. Note that if this were a real block
-  # comment, we would actually be describing the proceeding code.
-  #
-  # This is the second paragraph of the same block comment. Note
-  # that this paragraph was separated from the previous paragraph
-  # by a line containing a single comment character.
+# This is a block comment. Note that if this were a real block
+# comment, we would actually be describing the proceeding code.
+#
+# This is the second paragraph of the same block comment. Note
+# that this paragraph was separated from the previous paragraph
+# by a line containing a single comment character.
 
-  init()
-  start()
-  stop()
+init()
+start()
+stop()
 ```
 
 <a name="inline_comments"/>
@@ -174,15 +174,15 @@ The use of inline comments should be limited, because their existence is typical
 Do not use inline comments when they state the obvious:
 
 ```coffeescript
-  # No
-  x = x + 1 # Increment x
+# No
+x = x + 1 # Increment x
 ```
 
 However, inline comments can be useful in certain scenarios:
 
 ```coffeescript
-  # Yes
-  x = x + 1 # Compensate for border
+# Yes
+x = x + 1 # Compensate for border
 ```
 
 <a name="naming_conventions"/>
@@ -270,31 +270,31 @@ Favor `unless` over `if` for negative conditions.
 Instead of using `unless...else`, use `if...else`:
 
 ```coffeescript
-  # Yes
-  if true
-    ...
-  else
-    ...
+# Yes
+if true
+  ...
+else
+  ...
 
-  # No
-  unless false
-    ...
-  else
-    ...
+# No
+unless false
+  ...
+else
+  ...
 ```
 
 Multi-line if/else clauses should use indentation:
 
 ```coffeescript
-  # Yes
-  if true
-    ...
-  else
-    ...
+# Yes
+if true
+  ...
+else
+  ...
 
-  # No
-  if true then ...
-  else ...
+# No
+if true then ...
+else ...
 ```
 
 <a name="looping_and_comprehensions"/>
@@ -303,13 +303,13 @@ Multi-line if/else clauses should use indentation:
 Take advantage of comprehensions whenever possible:
 
 ```coffeescript
-  # Yes
-  result = (item.name for item in array)
+# Yes
+result = (item.name for item in array)
 
-  # No
-  results = []
-  for item in array
-    results.push item.name
+# No
+results = []
+for item in array
+  results.push item.name
 ```
 
 To filter:
@@ -353,9 +353,9 @@ If multiple lines are required by the description, indent subsequent lines to
 fit the content block.
 
 ```coffeescript
-  # TODO: Ensure that the value returned by this call falls within a certain
-  #       range, or throw an exception.
-  analyze()
+# TODO: Ensure that the value returned by this call falls within a certain
+#       range, or throw an exception.
+analyze()
 ```
 
 Annotation types:
