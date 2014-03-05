@@ -8,7 +8,7 @@ the [CoffeeScript][coffeescript] programming language.
 The details in this guide have been very heavily inspired by several existing
 style guides and other resources.
 
-Our version is based on [Polar's Coffeescript Style Guide][polar-cs-styleguide]
+Our version is based on [Polar's Coffeescript Style Guide][polar-cs-styleguide].
 
 ## Table of Contents
 
