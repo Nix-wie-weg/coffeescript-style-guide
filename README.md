@@ -35,19 +35,23 @@ Our version is based on [Polar's Coffeescript Style Guide][polar-cs-styleguide].
     * [Miscellaneous](#miscellaneous)
 
 <a name="code_layout"/>
+
 ## Code layout
 
 <a name="tabs_or_spaces"/>
+
 ### Tabs or Spaces?
 
 Use **spaces only**, with **2 spaces** per indentation level. Never mix tabs and spaces.
 
 <a name="maximum_line_length"/>
+
 ### Maximum Line Length
 
 Limit all lines to a maximum of 80 characters.
 
 <a name="blank_lines"/>
+
 ### Blank Lines
 
 Separate top-level function and class definitions with a single blank line.
@@ -57,16 +61,19 @@ Separate method definitions inside of a class with a single blank line.
 Use a single blank line within the bodies of methods or functions in cases where this improves readability (e.g., for the purpose of delineating logical sections).
 
 <a name="trailing_whitespace"/>
+
 ### Trailing Whitespace
 
 Do not include trailing whitespace on any lines.
 
 <a name="encoding"/>
+
 ### Encoding
 
 UTF-8 is the only allowed file encoding.
 
 <a name="module_imports"/>
+
 ## Module Imports
 
 If using a module system (CommonJS Modules, AMD, etc.), `require` statements should be placed on separate lines.
@@ -82,6 +89,7 @@ These statements should be grouped in the following order:
 3. Local imports _(imports specific to this application or library)_
 
 <a name="whitespace"/>
+
 ## Whitespace in Expressions and Statements
 
 Avoid extraneous whitespace in the following situations:
@@ -132,6 +140,7 @@ Additional recommendations:
         ```
 
 <a name="comments"/>
+
 ## Comments
 
 If modifying code that is described by an existing comment, update the comment such that it accurately reflects the new code. (Ideally, improve the code to obviate the need for the comment, and delete the comment entirely.)
@@ -141,6 +150,7 @@ The first word of the comment should be capitalized, unless the first word is an
 If a comment is short, the period at the end can be omitted.
 
 <a name="block_comments"/>
+
 ### Block Comments
 
 Block comments apply to the block of code that follows them.
@@ -163,6 +173,7 @@ stop()
 ```
 
 <a name="inline_comments"/>
+
 ### Inline Comments
 
 Inline comments are placed on the line immediately above the statement that they are describing. If the inline comment is sufficiently short, it can be placed on the same line as the statement (separated by a single space from the end of the statement).
@@ -186,6 +197,7 @@ x = x + 1 # Compensate for border
 ```
 
 <a name="naming_conventions"/>
+
 ## Naming Conventions
 
 Use `camelCase` (with a leading lowercase character) to name all variables, methods, and object properties.
@@ -207,6 +219,7 @@ _privateMethod: ->
 ```
 
 <a name="functions"/>
+
 ## Functions
 
 _(These guidelines also apply to the methods of a class.)_
@@ -251,6 +264,7 @@ new Tag(new Value(a, b), new Arg(c))
 ```
 
 <a name="strings"/>
+
 ## Strings
 
 Use string interpolation instead of string concatenation:
@@ -263,6 +277,7 @@ Use string interpolation instead of string concatenation:
 Always use double quoted (`""`) strings.
 
 <a name="conditionals"/>
+
 ## Conditionals
 
 Favor `unless` over `if` for negative conditions.
@@ -298,6 +313,7 @@ else ...
 ```
 
 <a name="looping_and_comprehensions"/>
+
 ## Looping and Comprehensions
 
 Take advantage of comprehensions whenever possible:
@@ -326,6 +342,7 @@ alert("#{key} = #{value}") for key, value of object
 ```
 
 <a name="extending_native_objects"/>
+
 ## Extending Native Objects
 
 Do not modify native objects.
@@ -333,11 +350,13 @@ Do not modify native objects.
 For example, do not modify `Array.prototype` to introduce `Array#forEach`.
 
 <a name="exceptions"/>
+
 ## Exceptions
 
 Do not suppress exceptions.
 
 <a name="annotations"/>
+
 ## Annotations
 
 Use annotations when necessary to describe a specific action that must be taken
@@ -367,6 +386,7 @@ If a custom annotation is required, the annotation should be documented in the
 project's README.
 
 <a name="miscellaneous"/>
+
 ## Miscellaneous
 
 `and` is preferred over `&&`.
